@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                                 // OKE TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
                                 // Untuk menyambungkan Android emulator dengan Django pada localhost,
                                 // gunakan URL http://10.0.2.2/
-                                final response = await request.login("http://virgillia-yeala-tutorial.pbp.cs.ui.id/auth/login/", {
+                                final response = await request.login("http://virgillia-yeala-tutorial.pbp.cs.ui.ac.id/auth/login/", {
                                 'username': username,
                                 'password': password,
                                 });

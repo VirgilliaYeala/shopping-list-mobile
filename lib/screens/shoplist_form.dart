@@ -71,7 +71,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
                     borderRadius: BorderRadius.circular(5.0),
                   ),
                 ),
-                // OK TODO: Tambahkan variabel yang sesuai
+                // OK 
                 onChanged: (String? value) {
                   setState(() {
                     _price = int.parse(value!);
