@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -13,7 +15,6 @@ class ProductPage extends StatefulWidget {
 
 class _ProductPageState extends State<ProductPage> {
 Future<List<Product>> fetchProduct() async {
-    //  OKE TODO: Ganti URL dan jangan lupa tambahkan trailing slash (/) di akhir URL!
     var url = Uri.parse(
         'http://virgillia-yeala-tutorial.pbp.cs.ui.ac.id/json/');
     var response = await http.get(
@@ -25,13 +26,13 @@ Future<List<Product>> fetchProduct() async {
     var data = jsonDecode(utf8.decode(response.bodyBytes));
 
     // melakukan konversi data json menjadi object Product
-    List<Product> list_product = [];
+    List<Product> listProduct = [];
     for (var d in data) {
         if (d != null) {
-            list_product.add(Product.fromJson(d));
+            listProduct.add(Product.fromJson(d));
         }
     }
-    return list_product;
+    return listProduct;
 }
 
 @override
