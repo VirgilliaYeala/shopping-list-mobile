@@ -3,7 +3,7 @@
 A new Flutter project.
 
 ## AppCenter
-[shopping-list](https://build.appcenter.ms/v0.1/apps/106990b1-f08d-4cda-8824-5ea53a881977/branches/main/badge)
+[![Build status](https://build.appcenter.ms/v0.1/apps/106990b1-f08d-4cda-8824-5ea53a881977/branches/main/badge)](https://appcenter.ms)
 
 ## Getting Started
 
